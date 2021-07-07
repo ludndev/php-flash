@@ -89,22 +89,22 @@ class Flash extends FlashLib
 		return $sflashLib;
 	}
 
-	public static function message(string $message):void
+	public function message(string $message):void
 	{
-		self::->set('message' , $message);
+		$this->set('message' , $message);
 	}
 
-	public static function success(string $message):void
+	public function success(string $message):void
 	{
 		$this->set('success' , $message);
 	}
 
-	public static function warning(string $message):void
+	public function warning(string $message):void
 	{
 		$this->set('warning' , $message);
 	}
 
-	public static function error(string $message):void
+	public function error(string $message):void
 	{
 		$this->set('error' , $message);
 	}
